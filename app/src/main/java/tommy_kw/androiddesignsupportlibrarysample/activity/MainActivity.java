@@ -1,17 +1,31 @@
-package tommy_kw.androiddesignsupportlibrarysample;
+package tommy_kw.androiddesignsupportlibrarysample.activity;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.TextView;
+
+import butterknife.ButterKnife;
+import butterknife.InjectView;
+import tommy_kw.androiddesignsupportlibrarysample.R;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
+    @InjectView(R.id.hoge_text)
+    TextView mHogeText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ButterKnife.inject(this);
+        Animation anim = AnimationUtils.loadAnimation(this, R.anim.translate);
+        mHogeText.startAnimation(anim);
     }
 
     @Override
