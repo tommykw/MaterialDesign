@@ -6,6 +6,13 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"/>
+
     <TextClock
         android:id="@+id/clock_text"
         android:layout_width="120dp"
@@ -15,10 +22,6 @@
         android:id="@+id/hoge_text"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:text="hogehogehoeghogehogehogehogehogehoge"
-        >
-    </TextView>
-
-
-    <include layout="@layout/drawer_navigation" android:id="@+id/drawer_navigation"/>
+        android:text="I don't know when"
+        />
 </LinearLayout>
