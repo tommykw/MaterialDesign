@@ -1,2 +1,2 @@
 # AndroidDesignSupportLibrarySample
-try to use Android Design Support Library
+Attempt to use Android Design Support Library
