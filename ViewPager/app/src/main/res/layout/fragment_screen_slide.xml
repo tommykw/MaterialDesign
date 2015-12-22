@@ -6,7 +6,7 @@
 
     <TextView
         style="?android:textAppearanceMedium"
-        android:padding="16dp"
+        android:padding="@dimen/element_margin_medium"
         android:lineSpacingMultiplier="1.2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

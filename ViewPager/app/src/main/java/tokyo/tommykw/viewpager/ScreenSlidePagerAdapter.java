@@ -8,8 +8,12 @@ import android.support.v4.app.FragmentStatePagerAdapter;
  * Created by tommy on 15/12/20.
  */
 public class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
-    public ScreenSlidePagerAdapter(FragmentManager fm) {
+    private final int mNumPages;
+
+
+    public ScreenSlidePagerAdapter(FragmentManager fm, int numPages) {
         super(fm);
+        mNumPages = numPages;
     }
 
     @Override
@@ -19,6 +23,6 @@ public class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public int getCount() {
-        return 0;
+        return mNumPages;
     }
 }
