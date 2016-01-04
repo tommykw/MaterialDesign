@@ -8,7 +8,7 @@ import java.util.ArrayList
 /**
  * Created by tommy on 15/12/22.
  */
-class Logger(tag: String, label: String) {
+sealed class Logger(tag: String, label: String) {
     private var mTag: String? = null
     private var mLabel: String? = null
     private var mDisabled: Boolean = false
