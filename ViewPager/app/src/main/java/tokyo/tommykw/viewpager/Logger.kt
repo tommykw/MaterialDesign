@@ -4,26 +4,17 @@ import android.os.SystemClock
 import android.util.Log
 
 import java.util.ArrayList
+import kotlin.properties.Delegates
 
 /**
  * Created by tommy on 15/12/22.
  */
-sealed class Logger(tag: String, label: String) {
-    private var mTag: String? = null
-    private var mLabel: String? = null
+class Logger(val tag: String, val label: String) {
+    private val mTag: String by lazy { tag }
+    private val mLabel: String by lazy { label }
     private var mDisabled: Boolean = false
     internal var mSplits: ArrayList<Long>? = null
     internal var mSplitLabels: ArrayList<String>? = null
-
-    init {
-        reset(tag, label)
-    }
-
-    fun reset(tag: String, label: String) {
-        mTag = tag
-        mLabel = label
-        reset()
-    }
 
     fun reset() {
         mDisabled = !Log.isLoggable(mTag, Log.VERBOSE)
