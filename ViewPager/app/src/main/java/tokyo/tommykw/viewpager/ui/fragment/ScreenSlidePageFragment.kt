@@ -1,10 +1,11 @@
-package tokyo.tommykw.viewpager
+package tokyo.tommykw.viewpager.ui.fragment
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import tokyo.tommykw.viewpager.R
 
 /**
  * Created by tommy on 15/12/20.

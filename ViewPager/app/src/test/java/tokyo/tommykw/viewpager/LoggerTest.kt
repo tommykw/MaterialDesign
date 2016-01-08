@@ -8,6 +8,7 @@ import org.robolectric.annotation.Config
 
 import org.hamcrest.CoreMatchers.*
 import org.junit.Assert.*
+import tokyo.tommykw.viewpager.app.Logger
 
 /**
  * Created by tommy on 15/12/24.
@@ -15,23 +16,15 @@ import org.junit.Assert.*
 @RunWith(RobolectricGradleTestRunner::class)
 @Config(constants = BuildConfig::class, sdk = intArrayOf(21))
 class LoggerTest {
-    private var logger: Logger? = null
-
-    @Before
-    @Throws(Exception::class)
-    fun setUp() {
-        logger = Logger("tab", "label")
-
-        //logger = Logger("tab", "label")
-    }
+    private val logger = Logger("tab", "label")
 
     @Test
     @Throws(Exception::class)
     fun testDump() {
-        logger!!.addSplit("hoge1")
-        logger!!.addSplit("hoge2")
-        logger!!.addSplit("hoge3")
-        logger!!.dump()
+        logger.addSplit("hoge1")
+        logger.addSplit("hoge2")
+        logger.addSplit("hoge3")
+        logger.dump()
         assertTrue(true)
     }
 }

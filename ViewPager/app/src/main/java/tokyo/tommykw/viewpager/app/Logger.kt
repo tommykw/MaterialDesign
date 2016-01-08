@@ -1,4 +1,4 @@
-package tokyo.tommykw.viewpager
+package tokyo.tommykw.viewpager.app
 
 import android.os.SystemClock
 import android.util.Log
