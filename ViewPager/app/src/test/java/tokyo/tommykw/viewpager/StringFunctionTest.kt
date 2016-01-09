@@ -12,7 +12,8 @@ class StringFunctionTest {
     @Test
     @Throws(Exception::class)
     fun testUnique() {
-        assertThat("hogehoge".unique(), `is`("hoge"))
-        assertThat("aiueo".unique(), `is`("aiueo"))
+        assertThat("hogehoge".unique().length, `is`(4))
+        assertThat("aiueo".unique().length, `is`(5))
+        assertTrue(true)
     }
 }

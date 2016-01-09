@@ -1,6 +1,7 @@
 package tokyo.tommykw.viewpager.app
 
 import java.util.*
+import kotlin.collections.joinToString
 import kotlin.text.forEach
 
 /**
@@ -9,5 +10,5 @@ import kotlin.text.forEach
 fun String?.unique(): String {
     var uniqueSet = HashSet<Char>()
     this?.subSequence(0, this.length)?.forEach { i -> uniqueSet.add(i) }
-    return uniqueSet.toString()
+    return uniqueSet.joinToString("")
 }
