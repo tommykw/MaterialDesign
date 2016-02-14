@@ -2,6 +2,8 @@ package tokyo.tommykw.viewpager.ui.widget
 
 import android.content.Context
 import android.content.res.TypedArray
+import android.graphics.Color
+import android.graphics.Color.BLUE
 import android.util.AttributeSet
 import android.view.View
 import tokyo.tommykw.viewpager.R
@@ -38,5 +40,17 @@ class LightSaberView : View {
         }
 
         setBackgroundColor(R.color.colorPrimary)
+    }
+
+    private fun setBackgroundColor(isMaceWindou: Boolean, force: Int) {
+        var color = Color.WHITE
+
+        when (isMaceWindou) {
+            true -> color = Color.MAGENTA
+            force == 0 -> color = BLUE
+            force == 1 -> color = Color.RED
+        }
+
+        setBackgroundColor(color)
     }
 }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LightSaberView">
+        <attr name="isMaceWindu" format="boolean" />
+        <attr name="force" format="enum">
+            <enum name="lightSide" value="0" />
+            <enum name="darkSide" value="1" />
+        </attr>
+    </declare-styleable>
+</resources>
