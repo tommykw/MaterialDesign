@@ -9,23 +9,15 @@ import android.view.View
 import tokyo.tommykw.viewpager.R
 
 /**
- * This view is custom view extend View
+ * This view is light saber view extend View
  */
 class LightSaberView : View {
-    constructor(context: Context) : super(context) {
-
-    }
-
     constructor(context: Context, attrs: AttributeSet) : super(context, attrs) {
         setup(context, attrs)
     }
 
-    constructor(context: Context, attrs: AttributeSet, defStyleAttr: Int) : super(context, attrs, defStyleAttr) {
-
-    }
-
     private fun setup(context: Context, attrs: AttributeSet) {
-        var ta = context.theme.obtainStyledAttributes(
+        val ta = context.theme.obtainStyledAttributes(
                 attrs,
                 R.styleable.LightSaberView,
                 0,
@@ -35,11 +27,10 @@ class LightSaberView : View {
         try {
             val isMaceWindou = ta.getBoolean(R.styleable.LightSaberView_isMaceWindu, false)
             val force = ta.getInteger(R.styleable.LightSaberView_force, 0);
+            setBackgroundColor(isMaceWindou, force)
         } finally {
             ta.recycle()
         }
-
-        setBackgroundColor(R.color.colorPrimary)
     }
 
     private fun setBackgroundColor(isMaceWindou: Boolean, force: Int) {
@@ -47,8 +38,7 @@ class LightSaberView : View {
 
         when (isMaceWindou) {
             true -> color = Color.MAGENTA
-            force == 0 -> color = BLUE
-            force == 1 -> color = Color.RED
+            false -> if (force == 0) color = BLUE else color = Color.RED
         }
 
         setBackgroundColor(color)
