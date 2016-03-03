@@ -7,12 +7,14 @@ import android.support.design.widget.BottomSheetBehavior;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.util.SortedList;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -50,7 +52,11 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private List<Item> createItems() {}
+    private List<Item> createItems() {
+        //SortedList<Item> item = new SortedList<Item>();
+        List<Item> items = new ArrayList<>();
+        return items;
+    }
 
 
     @Override
