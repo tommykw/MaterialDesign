@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -53,5 +54,23 @@ public class BottomSheetFragment extends Fragment {
 
             }
         });
+
+        if (recyclerView == null) {
+            recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view)
+        }
+
+        return view;
     }
+
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        if (recyclerView.getAdapter() == null) {
+
+        }
+    }
+
+
 }
