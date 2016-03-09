@@ -3,6 +3,9 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="colorSheetText">#DE000000</color>
-    <color name="colorSheetTitle">#8A000000</color>
+    <color name="colorSheetText">@color/black</color>
+    <color name="colorSheetTitle">@color/gray</color>
+
+    <color name="gray">#808080</color>
+    <color name="black">#000000</color>
 </resources>

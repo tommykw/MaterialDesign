@@ -10,6 +10,7 @@
 
 # IntelliJ
 *.iml
+.idea/*
 
 # Generated files
 bin/
