@@ -125,20 +125,4 @@ public class SampleAdapter extends RecyclerView.Adapter<SampleAdapter.SampleView
             return item1.getId() == item2.getId();
         }
     }
-
-    public static class SampleViewHolder extends RecyclerView.ViewHolder {
-        private TextView idText;
-        private TextView textText;
-
-        public SampleViewHolder(View itemView) {
-            super(itemView);
-            idText = (TextView) itemView.findViewById(R.id.id);
-            textText = (TextView) itemView.findViewById(R.id.text);
-        }
-
-        public void bind(@NonNull SampleData data) {
-            idText.setText(String.valueOf(data.getId()));
-            textText.setText(data.getText());
-        }
-    }
 }
