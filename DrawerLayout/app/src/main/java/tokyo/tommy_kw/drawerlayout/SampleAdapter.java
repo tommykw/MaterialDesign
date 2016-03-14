@@ -3,11 +3,13 @@ package tokyo.tommy_kw.drawerlayout;
 import android.support.annotation.NonNull;
 import android.support.v7.util.SortedList;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.widget.TextView;
 
 /**
  * Created by tommy on 2016/03/07.
  */
-public class SampleAdapter extends RecyclerView.Adapter<> {
+public class SampleAdapter extends RecyclerView.Adapter<SampleAdapter.> {
     private SortedList<SampleData> sortedList;
     public SampleAdapter() {
         sortedList = new SortedList<>(SampleData.class)
@@ -57,6 +59,22 @@ public class SampleAdapter extends RecyclerView.Adapter<> {
         @Override
         public boolean areItemsTheSame(SampleData item1, SampleData item2) {
             return item1.getId() == item2.getId();
+        }
+    }
+
+    public static class SampleViewHolder extends RecyclerView.ViewHolder {
+        private TextView idText;
+        private TextView textText;
+
+        public SampleViewHolder(View itemView) {
+            super(itemView);
+            idText = (TextView) itemView.findViewById(R.id.id);
+            textText = (TextView) itemView.findViewById(R.id.text);
+        }
+
+        public void bind(@NonNull SampleData data) {
+            idText.setText(String.valueOf(data.getId()));
+            textText.setText(data.getText());
         }
     }
 }
