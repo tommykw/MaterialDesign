@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="EntryPointsManager">
-    <entry_points version="2.0" />
-  </component>
   <component name="NullableNotNullManager">
     <option name="myDefaultNullable" value="android.support.annotation.Nullable" />
     <option name="myDefaultNotNull" value="android.support.annotation.NonNull" />
@@ -35,143 +32,120 @@
             <id />
           </State>
           <State>
-            <id>Abstraction issuesJava</id>
+            <id>Android Lint</id>
+          </State>
+          <State>
+            <id>Assignment issues</id>
           </State>
           <State>
             <id>Assignment issuesGroovy</id>
           </State>
           <State>
-            <id>Assignment issuesJava</id>
+            <id>Class metrics</id>
           </State>
           <State>
-            <id>Bitwise operation issuesJava</id>
+            <id>Class structure</id>
           </State>
           <State>
-            <id>C/C++</id>
+            <id>Code style issues</id>
           </State>
           <State>
-            <id>Class metricsJava</id>
+            <id>Control FlowGroovy</id>
           </State>
           <State>
-            <id>Class structureJava</id>
+            <id>Control flow issues</id>
           </State>
           <State>
-            <id>Cloning issuesJava</id>
+            <id>Declaration redundancy</id>
           </State>
           <State>
-            <id>Code style issuesJava</id>
+            <id>Error handling</id>
           </State>
           <State>
-            <id>Compiler issuesJava</id>
+            <id>Finalization issues</id>
           </State>
           <State>
-            <id>Control flow issuesJava</id>
+            <id>General</id>
           </State>
           <State>
-            <id>Data flow issuesJava</id>
-          </State>
-          <State>
-            <id>Declaration orderC/C++</id>
-          </State>
-          <State>
-            <id>Encapsulation issuesJava</id>
-          </State>
-          <State>
-            <id>Error handlingGroovy</id>
-          </State>
-          <State>
-            <id>Error handlingJava</id>
-          </State>
-          <State>
-            <id>Finalization issuesJava</id>
+            <id>Gradle</id>
           </State>
           <State>
             <id>Groovy</id>
           </State>
           <State>
-            <id>Inheritance issuesJava</id>
+            <id>Inheritance issues</id>
           </State>
           <State>
-            <id>Initialization issuesJava</id>
+            <id>Internationalization issues</id>
           </State>
           <State>
-            <id>Internationalization issuesJava</id>
+            <id>J2ME issues</id>
           </State>
           <State>
-            <id>J2ME issuesJava</id>
+            <id>JUnit issues</id>
           </State>
           <State>
-            <id>JSON</id>
+            <id>Java language level migration aids</id>
           </State>
           <State>
-            <id>Java</id>
+            <id>Javadoc issues</id>
           </State>
           <State>
-            <id>Java language level migration aidsJava</id>
+            <id>Language Injection</id>
           </State>
           <State>
-            <id>JavaBeans issuesJava</id>
+            <id>Logging issues</id>
           </State>
           <State>
-            <id>Kotlin</id>
+            <id>Maven</id>
           </State>
           <State>
             <id>Method MetricsGroovy</id>
           </State>
           <State>
-            <id>Method metricsJava</id>
+            <id>Method metrics</id>
           </State>
           <State>
-            <id>Numeric issuesJava</id>
+            <id>Numeric issues</id>
           </State>
           <State>
-            <id>OtherGroovy</id>
+            <id>Packaging issues</id>
           </State>
           <State>
-            <id>Performance issuesJava</id>
+            <id>Pattern Validation</id>
+          </State>
+          <State>
+            <id>Performance issues</id>
           </State>
           <State>
             <id>Potentially confusing code constructsGroovy</id>
           </State>
           <State>
-            <id>Probable bugsGroovy</id>
+            <id>Probable bugs</id>
           </State>
           <State>
-            <id>Probable bugsJava</id>
+            <id>Probable bugsGradle</id>
           </State>
           <State>
-            <id>RELAX NG</id>
+            <id>Properties Files</id>
           </State>
           <State>
-            <id>Security issuesJava</id>
+            <id>Serialization issues</id>
           </State>
           <State>
-            <id>Serialization issuesJava</id>
+            <id>Threading issues</id>
           </State>
           <State>
             <id>Threading issuesGroovy</id>
           </State>
           <State>
-            <id>Threading issuesJava</id>
-          </State>
-          <State>
-            <id>Type checksC/C++</id>
-          </State>
-          <State>
-            <id>Verbose or redundant code constructsJava</id>
-          </State>
-          <State>
-            <id>Visibility issuesJava</id>
+            <id>Validity issuesGroovy</id>
           </State>
           <State>
             <id>XML</id>
           </State>
         </expanded-state>
-        <selected-state>
-          <State>
-            <id>Android</id>
-          </State>
-        </selected-state>
       </profile-state>
     </entry>
   </component>
@@ -190,5 +164,55 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>Android API 19 Platform</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
